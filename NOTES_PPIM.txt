@@ -1,4 +1,0 @@
-INSERT INTO twitter_users(screen_name, name, id_str, address, location, lat, lon)
-    SELECT DISTINCT(screen_name), name, id_str, address, location, lat, lon
-    FROM islam_id_2009_2019
-    WHERE screen_name NOT IN (SELECT screen_name FROM twitter_users);
